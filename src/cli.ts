@@ -6,9 +6,8 @@ const { build } = require('gluegun')
 async function run(argv) {
   // create a CLI runtime
   const cli = build()
-    .brand('submarine')
+    .brand('st')
     .src(`${__dirname}`)
-    .plugins('./node_modules', { matching: 'submarine-*', hidden: true })
     .create()
 
   // and run it

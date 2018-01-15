@@ -64,14 +64,15 @@ module.exports = {
 
     const printCredits = () => print.info(`You have ${colors.green(game.credits)} credits.`)
 
-    print.info('')
-    print.success(`Submarine Space Transport`) // this name is a placeholder
+    context.cls()
+
+    print.success(`Space Transport`)
     print.info('by Jamon Holmgren')
     print.info(`version ${meta.version()}`)
     print.info('')
     print.info('-----------------------')
     print.info('')
-    print.info('You just started a small space transport company called Submarine Space Transport.')
+    print.info('You just started a small space transport company called, creatively, Space Transport, Inc..')
     print.info(`A bank has loaned you ${game.credits} credits toward buying your first space transport (ST).`)
     print.info('')
     print.info('Unfortunately, this is only enough to buy an ancient, rickety ST.')
@@ -82,8 +83,6 @@ module.exports = {
     let done = false
 
     while (!done) {
-      context.cls()
-
       let input: GameInput = { main: null }
 
       if (game.state === 'office') {

@@ -1,10 +1,10 @@
 {
-  "name": "submarine",
+  "name": "st",
   "version": "0.0.1",
-  "description": "submarine CLI",
+  "description": "Space Transport",
   "private": true,
   "bin": {
-    "submarine": "bin/submarine"
+    "st": "bin/st"
   },
   "scripts": {
     "format": "prettier --write **/*.{js,ts,tsx,json}",

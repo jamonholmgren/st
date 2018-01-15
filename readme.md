@@ -1,6 +1,6 @@
-# submarine CLI
+# Space Transport
 
-A CLI for submarine.
+A text-based space transport game.
 
 # License
 
